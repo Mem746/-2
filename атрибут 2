@@ -1,0 +1,19 @@
+from locale import format_string
+class house:
+    def __init__(self, name, number_of_floors):
+        self.name = name
+        self.number_of_floors = number_of_floors
+    def go_to (new_floor):
+        go_to = int(new_floor)
+        if go_to >= 1 and go_to <= new_floor:
+            print (go_to)
+        else:
+            print("Такого этажа не сущществует")
+    def __len__(self):
+        return self.number_of_floors
+    def __str__(self):
+        return f"Название:, {self.name} , кол-во этажей:, {self.number_of_floors}"
+albrus = house("жк Эльбрус",10)
+akacia = house("жк акация", 20)
+print(albrus)
+print(akacia)
